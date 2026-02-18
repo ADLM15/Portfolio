@@ -67,3 +67,16 @@ form.addEventListener('submit', (e) => {
         formMsg.textContent = "";
     }, 3000);
 });
+skillCards.forEach(card => {
+
+    card.addEventListener('click', () => {
+
+        card.classList.toggle('active-skill');
+
+        if (card.classList.contains('active-skill')) {
+            card.style.transform = 'rotateX(0) rotateY(0) scale(1)';
+        }
+
+    });
+
+});
